@@ -161,7 +161,102 @@ footer a{
     color: #00ffff;
 }
 
-@media screen and (min-width:768px){
+/*Smartphone*/
+@media screen and (max-width:786px) {
+
+    /*Nav*/
+    nav {
+        flex-direction:column;
+        justify-content: space-around;
+        
+        
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+        font-size: 22px;
+        
+    }
+
+    /*Cabeçalho*/
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    /*Artigos*/
+    #artigos {
+        height: 250px;
+        height: 20vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*Galeria*/
+    #galeria {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #galeria p{
+        width: 100%;
+        padding: 10px;
+    }
+    #galeria h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #galeria img {
+        width: 33.33333333%;
+    }
+    /*Lojas*/
+    #lojas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #lojas h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #lojas div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10 px;
+        text-align: center;
+    }
+
+    #lojas div p{
+        font-size: 30px;
+        
+    }
+    
+    /*Contato*/
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2,
+    #contato p {
+        width: 100%;
+
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:1023px){
 
     /*Nav*/
     nav{
@@ -230,7 +325,86 @@ footer a{
 
     #contato h2, #contato p {
         width: 100%;
-        
+
     }
 }
+/*Desktop*/
+@media screen and (min-width:1024px) {
 
+    /*Nav*/
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    /*Cabeçalho*/
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /*Artigos*/
+    #artigos {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*Lojas*/
+    #lojas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #lojas h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #lojas div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10 px;
+    }
+
+    /*Galeria*/
+    #galeria {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #galeria h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #galeria img {
+        width: 33.33333333%;
+    }
+
+    /*Contato*/
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2,
+    #contato p {
+        width: 100%;
+
+    }
+}
